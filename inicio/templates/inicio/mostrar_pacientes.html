@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title_head %}
+<title>Lista Pacientes</title>
+{% endblock title_head %}
+
+{% block h1_header %}
+<h1>Muestro el Paciente creado</h1>
+
+<p>
+    <form action={% url 'mostrar_pacientes' %} method="get">
+        {{formulario_busqueda}}
+        <button>Buscar</button>
+    </form>
+</p>
+
+{% if pacientes %}
+
+    {% for paciente in pacientes %}
+    <li>
+        Nombre: {{paciente.nombre}} / Apellido: {{paciente.apellido}} / Año Nacimiento: {{paciente.año_nacimiento}}
+    </li>
+
+    {% endfor %}  
+
+{% else %}
+    <h2>No Hay datos sobre Pacientes por el momento.</h2>
+{% endif %}
+{% endblock h1_header %}
