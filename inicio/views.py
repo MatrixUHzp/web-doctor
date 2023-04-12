@@ -20,7 +20,7 @@ def crear_paciente(request):
         if formulario.is_valid():
             datos_correctos = formulario.cleaned_data
 
-            paciente = Paciente(nombre=datos_correctos['nombre'], apellido=datos_correctos['apellido'], año_nacimiento=datos_correctos['año_nacimiento'])
+            paciente = Paciente(nombre=datos_correctos['nombre'], apellido=datos_correctos['apellido'], dni=datos_correctos['dni'], año_nacimiento=datos_correctos['año_nacimiento'])
             paciente.save()
 
             return redirect('mostrar_pacientes')

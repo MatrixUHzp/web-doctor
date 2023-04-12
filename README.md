@@ -1,4 +1,6 @@
 # web-doctor
+Matias Rasmussen
+
 Esta es mi primera pagina web orientada a un hospital o clinica
 donde se pueden encontrar funciones basicas como
 buscar doctores, crear pacientes y buscar pacientes
