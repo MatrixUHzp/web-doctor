@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title_head %}
+<title>Eliminar Paciente</title>
+{% endblock title_head %}
+
+{% block h1_header %}
+<h1>Eliminar Paciente</h1>
+{% endblock h1_header %}
+
+{% block section1 %}
+<form action={% url 'eliminar_paciente' paciente.id %} method="POST">
+    {% csrf_token %}
+    <p>¿Desea eliminar permanentemente el paciente {{paciente}}</p>
+    <button>Eliminar</button>
+</form>
+{% endblock section1 %}

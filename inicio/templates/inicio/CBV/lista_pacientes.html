@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title_head %}
+<title>Lista Pacientes</title>
+{% endblock title_head %}
+
+{% block h1_header %}
+<h1>Muestro el Paciente creado</h1>
+{% endblock h1_header %}
+
+{% block section1 %}
+<p>
+    <form action={% url 'lista_pacientes' %} method="get">
+        {{form}}
+        <button>Buscar</button>
+    </form>
+</p>
+{% if object_list %}
+
+    {% for paciente in object_list %}
+    <li>
+        {{paciente}}
+        <button>
+            <a class="navbar-brand" href="{% url 'modificar_pacientes' paciente.id %}">Modificar</a>
+        </button>
+        <button>
+            <a class="navbar-brand" href="{% url 'eliminar_paciente' paciente.id %}">Eliminar</a>
+        </button>
+    </li>
+    {% endfor %}  
+
+{% else %}
+    <h2>No Hay datos sobre Pacientes por el momento.</h2>
+{% endif %}
+{% endblock section1 %}

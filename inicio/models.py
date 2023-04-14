@@ -13,5 +13,5 @@ class Paciente(models.Model):
     dni = models.IntegerField(null=True)
 
     def __str__(self):
-        return f'Soy {self.nombre} {self.apellido} mi dni es {self.dni}y nací en {self.año_nacimiento}'
+        return f'Soy {self.nombre} {self.apellido} mi dni es {self.dni} y nací en {self.año_nacimiento}'
 
