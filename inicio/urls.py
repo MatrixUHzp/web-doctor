@@ -5,13 +5,7 @@ from inicio import views
 
 urlpatterns = [
     path('', views.mi_vista, name='inicio'),
-    path('crear-medico/', views.crear_medico, name='doctor'),
-
-    #Pacientes Con vistas
-    # path('pacientes/', views.lista_pacientes, name='lista_pacientes'),
-    # path('pacientes/crear/', views.crear_paciente, name='paciente'),
-    # path('pacientes/<int:id_paciente>/eliminar/', views.eliminar_paciente, name='eliminar_pacientes'),
-    # path('pacientes/<int:id_paciente>/modificar/', views.modificar_paciente, name='modificar_pacientes'),
+    path('acerca/', views.acerca, name='acerca'),
 
     #Pacientes con CBV
     path('lista-pacientes/', views.ListaPacientes.as_view(), name='lista_pacientes'),

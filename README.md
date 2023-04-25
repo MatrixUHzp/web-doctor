@@ -25,8 +25,8 @@ Pasos a seguir para usar la web:
 Funciones de la página:
     
     Principales:
+    -Iniciar Sesión
     -Ir a la parte de inicio
-    -Crear un doctor (No se guardará en la base de datos)
     -Crear un paciente
     -Mostrar los pacientes creados
 
