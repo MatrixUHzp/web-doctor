@@ -5,7 +5,6 @@ urlpatterns = [
     path('', views.mi_vista, name='inicio'),
     path('acerca/', views.acerca, name='acerca'),
 
-
     #Pacientes con CBV
     path('lista-pacientes/', views.ListaPacientes.as_view(), name='lista_pacientes'),
     path('pacientes/crear/', views.CrearPaciente.as_view(), name='crear_paciente'),
