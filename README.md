@@ -1,19 +1,14 @@
 # web-doctor
 Matias Rasmussen
 
-Esta es mi primera pagina web orientada a un hospital o clinica
-donde se pueden encontrar funciones basicas como
-buscar doctores, crear pacientes y buscar pacientes
-hasta ahora, pero originalmente tenia la idea de crearsela a mi 
-padrino doctor como una página web personal, donde cuente mayormente
-en que se especializa, en que hospitales esta disponible y demás cosas,
-siendo la gran mayoría información acerca de él, con una que otra función.
+-Esta es mi seegunda página web y trata de una especie de Blog que
+hice para mi tio doctor, y decidi hacer está pagina para que tenga su
+propia web de lo que hace, donde y como trabaja.
 
--El proyecto se encuentra en una fase muy temprana todavía 
-y se puede reflejar en la parte de "crear doctor", que dicha parte
-no está terminada del todo aún, sino que es una función de prueba y quizás
-sea retirada más adelante. Me gustaría hacer más cambios
-para orientar mi página a lo que originalmente había planteado.
+-El proyecto se encuentra listo para la entrega, testeada a fondo para que no haya 
+ningún problema, si se halla algún error, puede deberse a la falta de tiempo para corregirlo, 
+o simplemente porque no sabia como resolverlo. Me gustaría hacer más cambios
+para mejorar en especial el diseño de la página.
 
 Pasos a seguir para usar la web:
 
@@ -26,18 +21,12 @@ Funciones de la página:
     
     Principales:
     -Iniciar Sesión
-    -Ir a la parte de inicio
-    -Crear un paciente
-    -Mostrar los pacientes creados
+    -Registrarse
+    -Ir a la pesataña de Inicio
 
     Secundarias:
-    -En la pestaña crear un paciente, tienes que escribir
-    tu nombre, apellido, dni y año de nacimiento
-    -En mostrar los pacientes creados, puedes buscar el nombre de 
-    algun paciente o algun caracter que este posea y traera los distintos
-    resultados encontrados, de lo contrario, va a dar un mensaje diciendo
-    que no hay resultados
+    -Cerrar Sesión
+    -Crear Paciente
+    -Ver todos los pacientes (modificarlos o eliminarlos)
+    -Ver perfil propio (Modificar perfil o contraseña)
 
-**IMPORTANTE**
-
-Crear por lo menos algún paciente

@@ -5,6 +5,45 @@
 {% endblock title_head %}
 
 {% block h1_header %}
-<h1>Bienvenido {{request.user.username}}, espero que te encuentres bien</h1>
+<h1>Dr. Jorge Ariel Rasmussen</h1>
+<h3>Neurocirujano</h3>
 {% endblock h1_header %}
 
+{% block section1 %}
+<!-- Image Showcases-->
+<section class="showcase">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-1.jpg')"></div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                <h2>Sobre mí</h2>
+                <p class="lead mb-0">Neurocirujano Junior, experiencia clínico-quirúrgica en patología 
+                    craneoencefálica y espinal; importante perfil académico e investigador, tanto en el 
+                    ámbito clínico como en medicina experimental, innovación y desarrollo. Experiencia en
+                    docencia universitaria.
+                </p>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-2.jpg')"></div>
+            <div class="col-lg-6 my-auto showcase-text">
+                <h2>Cirugias</h2>
+                <p class="lead mb-0">Hay muchas cirugias relacionadas al cerebro y a la columna, pero las
+                    más comunes son: cirugia de <a href="https://www.mayoclinic.org/es-es/diseases-conditions/epilepsy/symptoms-causes/syc-20350093">epilepsia</a>, cirugia de 
+                    <a href="https://www.mayoclinic.org/es-es/diseases-conditions/parkinsons-disease/symptoms-causes/syc-20376055">parkinson</a> y cirugia de 
+                    <a href="https://www.clinicalascondes.cl/CENTROS-Y-ESPECIALIDADES/Centros/Centro-de-Columna/Noticias/Te-puede-interesar/artrosis-de-columna-sintomas-tratamiento">artrosis de columna</a>
+                </p>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-3.jpg')"></div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                <h2>Hospitales y Clínicas</h2>
+                <p class="lead mb-0">Hospital Español de Mendoza - Hospital "El Carmen" - Hospital "L. Lagomaggiore" - Sociedad Española de Socorros Mutuos.
+                    Y consultorios en "Instituto Estefan" y Centro Médico "La Barraca".
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock section1 %}
