@@ -46,6 +46,7 @@ def registro(request):
 def editar_perfil(request):
     
     if request.method == "POST":
+        formulario = EdicionDatosUsuario(request.POST, request.FILES, instance=request.user)
         
         if formulario.is_valid():
             if formulario.cleaned_data.get('avatar'):
