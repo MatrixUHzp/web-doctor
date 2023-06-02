@@ -57,7 +57,8 @@ def editar_perfil(request):
         else:
             return render(request, 'usuarios/editar_perfil.html', {'formulario': formulario})
     
-    formulario = EdicionDatosUsuario(initial={'avatar':request.user.informacionextra.avatar}, instance=request.user)
+    formulario = EdicionDatosUsuario(initial={'avatar':request.user.informacionextra.avatar,
+                                              'link':request.user.informacionextra.link}, instance=request.user)
     return render(request, 'usuarios/editar_perfil.html', {'formulario': formulario})
 
 

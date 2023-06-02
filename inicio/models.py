@@ -10,4 +10,7 @@ class Paciente(models.Model):
 
     def __str__(self):
         return f'Soy {self.nombre} {self.apellido} mi dni es {self.dni} y nací en {self.año_nacimiento}'
+    
+class Imagen(models.Model):
+    imagen = models.ImageField(upload_to='index.html', null=True, blank=True)
 

@@ -10,12 +10,13 @@
 {% endblock h1_header %}
 
 {% block section1 %}
+{% load static %}
 <!-- Image Showcases-->
 <section class="showcase">
     <div class="container-fluid p-0">
         <div class="row g-0">
-            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-1.jpg')"></div>
-            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <div class="col-lg-6 text-white showcase-img" style="background-image: url({% static 'inicio/assets/img/descarga.jpg' %})"></div>
+            <div class="col-lg-6 my-auto showcase-text">
                 <h2 style="color:#cd0dfd">Sobre mí</h2>
                 <p class="lead mb-0">Neurocirujano Junior, experiencia clínico-quirúrgica en patología 
                     craneoencefálica y espinal; importante perfil académico e investigador, tanto en el 
@@ -25,8 +26,8 @@
             </div>
         </div>
         <div class="row g-0">
-            <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-2.jpg')"></div>
-            <div class="col-lg-6 my-auto showcase-text">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url({% static 'inicio/assets/img/bg-showcase-1.jpg' %})"></div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                 <h2 style="color:#cd0dfd">Cirugias</h2>
                 <p class="lead mb-0">Hay muchas cirugias relacionadas al cerebro y a la columna, pero las
                     más comunes son: cirugia de <a href="https://www.mayoclinic.org/es-es/diseases-conditions/epilepsy/symptoms-causes/syc-20350093" style="color:#000000">epilepsia</a>, cirugia de 
@@ -36,14 +37,14 @@
             </div>
         </div>
         <div class="row g-0">
-            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-3.jpg')"></div>
-            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <div class="col-lg-6 text-white showcase-img" style="background-image: url({% static 'inicio/assets/img/bg-showcase-1.jpg' %})"></div>
+            <div class="col-lg-6 my-auto showcase-text">
                 <h2 style="color:#cd0dfd">Hospitales y Clínicas</h2>
                 <p class="lead mb-0">Hospital Español de Mendoza - Hospital "El Carmen" - Hospital "L. Lagomaggiore" - Sociedad Española de Socorros Mutuos.
                     Y consultorios en "Instituto Estefan" y Centro Médico "La Barraca".
                 </p>
             </div>
-        </div>
+p        </div>
     </div>
 </section>
 {% endblock section1 %}
