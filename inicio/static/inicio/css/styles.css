@@ -1289,6 +1289,7 @@ progress {
   .col-lg-6 {
     flex: 0 0 auto;
     width: 50%;
+    border: 5px solid pink;
   }
   .col-lg-7 {
     flex: 0 0 auto;
@@ -8081,6 +8082,7 @@ textarea.form-control-lg {
 .text-white {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+  border: 5px solid pink;
 }
 
 .text-body {
@@ -10871,10 +10873,12 @@ header.masthead h1, header.masthead .h1 {
 
 .showcase .showcase-text {
   padding: 3rem;
+  border: 5px solid pink;
 }
 .showcase .showcase-img {
   min-height: 30rem;
   background-size: cover;
+  
 }
 @media (min-width: 768px) {
   .showcase .showcase-text {
