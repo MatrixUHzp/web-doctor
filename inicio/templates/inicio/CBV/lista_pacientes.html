@@ -5,26 +5,21 @@
 {% endblock title_head %}
 
 {% block h1_header %}
-<h1>Muestro el Paciente creado</h1>
+<h1>Pacientes Creados</h1>
 {% endblock h1_header %}
 
 {% block section1 %}
-<p>
-    <form action={% url 'lista_pacientes' %} method="GET">
-        {{form}}
-        <button>Buscar</button>
-    </form>
-</p>
+
 {% if object_list %}
 
     {% for paciente in object_list %}
     <li>
         {{paciente}}
         <button>
-            <a class="navbar-brand" href="{% url 'modificar_pacientes' paciente.id %}">Modificar</a>
+            <a class="navbar-brand boton" href="{% url 'modificar_pacientes' paciente.id %}">Modificar</a>
         </button>
         <button>
-            <a class="navbar-brand" href="{% url 'eliminar_paciente' paciente.id %}">Eliminar</a>
+            <a class="navbar-brand boton" href="{% url 'eliminar_paciente' paciente.id %}" style="background-color:red">Eliminar</a>
         </button>
     </li>
     {% endfor %}  
