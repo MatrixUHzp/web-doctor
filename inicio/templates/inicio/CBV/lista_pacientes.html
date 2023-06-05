@@ -13,15 +13,14 @@
 {% if object_list %}
 
     {% for paciente in object_list %}
-    <li>
-        {{paciente}}
-        <button>
+    <div class="margin-top margin-bottom">
+        <li>
+            {{paciente}}
             <a class="navbar-brand boton" href="{% url 'modificar_pacientes' paciente.id %}">Modificar</a>
-        </button>
-        <button>
             <a class="navbar-brand boton" href="{% url 'eliminar_paciente' paciente.id %}" style="background-color:red">Eliminar</a>
-        </button>
-    </li>
+            
+        </li>
+    </div>
     {% endfor %}  
 
 {% else %}

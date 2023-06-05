@@ -11,9 +11,16 @@
 {% block section1 %}
 <form action={% url 'modificar_pacientes' paciente.id %} method="POST">
     {% csrf_token %}
-    <table>
-        {{form}}
-    </table>
-    <button class="boton">Modificar</button>
+    <div style="background-color:#2C3E50">
+        <div class="centrado" style="background-color:#ffffff">
+            <div class="contenedor">
+                <table>{{form}}</table>
+            </div>
+            <p></p>
+            <div class="contenedor">
+                <button class="boton">Modificar</button>
+            </div>
+        </div>
+    </div>
 </form>
 {% endblock section1 %}

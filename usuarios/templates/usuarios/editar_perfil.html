@@ -14,10 +14,18 @@
 {% endif %}
 <form action={% url 'editar_perfil' %} method="post" enctype='multipart/form-data'>
     {% csrf_token %}
-    <table>
-        {{formulario}}
-    </table>
-    <button type='button' class="boton"> <a class="navbar-brand" href="{% url 'cambio_contraseña' %}">Cambiar Contraseña</a></button>
-    <button class="boton">Guardar Cambios</button>
+    <div style="background-color:#2C3E50">
+        <div class="centrado" style="background-color:#ffffff">
+            <div class="contenedor">
+                <table>{{formulario}}</table>
+            </div>
+            <div class="contenedor">
+                <p>
+                    <button type='button' class="boton"> <a class="navbar-brand" href="{% url 'cambio_contraseña' %}">Cambiar Contraseña</a></button>
+                    <button class="boton">Guardar Cambios</button>
+                </p>
+            </div>
+        </div>
+    </div>
 </form>
 {% endblock section1 %}

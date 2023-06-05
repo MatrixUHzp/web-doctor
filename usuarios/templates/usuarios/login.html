@@ -14,9 +14,16 @@
 {% endif %}
 <form action={% url 'login' %} method="post">
     {% csrf_token %}
-    <table>
-        {{formulario}}
-    </table>
-    <button class="boton">Iniciar Sesión</button>
+    <div style="background-color:#2C3E50">
+        <div class="centrado" style="background-color:#ffffff">
+            <div class="contenedor">
+                <table>{{formulario}}</table>
+            </div>
+            <p></p>
+            <div class="contenedor">
+                <button class="boton">Iniciar Sesión</button>
+            </div>
+        </div>
+    </div>
 </form>
 {% endblock section1 %}

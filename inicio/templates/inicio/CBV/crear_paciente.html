@@ -1,19 +1,26 @@
 {% extends 'base.html' %}
 
 {% block title_head %}
-<title>Paciente</title>
+<title>Crear Paciente</title>
 {% endblock title_head %}
 
 {% block h1_header %}
-<h1>Bienvenido a la creacion de pacientes</h1>
+<h1>Crear Paciente</h1>
 {% endblock h1_header %}
 
 {% block section1 %}
 <form action={% url 'crear_paciente' %} method="POST">
     {% csrf_token %}
-    <table>
-        {{form}}
-    </table>
-    <button class="boton">Crear</button>
+    <div style="background-color:#2C3E50">
+        <div class="centrado" style="background-color:#ffffff">
+            <div class="contenedor">
+                <table>{{form}}</table>
+            </div>
+            <p></p>
+            <div class="contenedor">
+                <button class="boton">Crear</button>
+            </div>
+        </div>
+    </div>
 </form>
 {% endblock section1 %}

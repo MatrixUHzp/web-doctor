@@ -11,7 +11,16 @@
 {% block section1 %}
 <form action={% url 'eliminar_paciente' paciente.id %} method="POST">
     {% csrf_token %}
-    <p>¿Desea eliminar permanentemente el paciente {{paciente}}</p>
-    <button class="boton" style="background-color:red">Eliminar</button>
+    <div style="background-color:#2C3E50">
+        <div class="centrado" style="background-color:#ffffff">
+            <div class="contenedor">
+                <p>¿Desea eliminar permanentemente el paciente {{paciente.nombre}} {{paciente.apellido}}?</p>
+            </div>
+            <p></p>
+            <div class="contenedor">
+                <button class="boton" style="background-color:red">Eliminar</button>
+            </div>
+        </div>
+    </div>
 </form>
 {% endblock section1 %}

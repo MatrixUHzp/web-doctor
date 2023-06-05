@@ -3,6 +3,7 @@ from django.contrib.auth.forms import UserCreationForm, UserChangeForm, Authenti
 from django.contrib.auth.models import User
 
 class MiFormularioDeCreacion(UserCreationForm):
+    username = forms.CharField(label='Usuario')
     email = forms.EmailField()
     password1 = forms.CharField(label='Contraseña', widget=forms.PasswordInput)
     password2 = forms.CharField(label='Repetir Contraseña', widget=forms.PasswordInput)
@@ -19,7 +20,7 @@ class EdicionDatosUsuario(UserChangeForm):
     last_name = forms.CharField(label='Apellido', max_length=20)
     avatar = forms.ImageField(required=False)
     link = forms.URLField(label='Enlace', required=False)
-    descripcion = forms.CharField(widget=forms.Textarea ,required=False)
+    descripcion = forms.CharField(widget=forms.Textarea(attrs={'rows': 5, 'cols': 30}) ,required=False)
 
     class Meta:
         model = User
