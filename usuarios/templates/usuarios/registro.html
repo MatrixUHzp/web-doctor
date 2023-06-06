@@ -9,13 +9,14 @@
 {% endblock h1_header %}
 
 {% block section1 %}
-{% if formulario.errors %}
-<p style="color: red">Hubo un error</p>
-{% endif %}
+
 <form action={% url 'registro' %} method="post">
     {% csrf_token %}
     <div style="background-color:#2C3E50">
         <div class="centrado" style="background-color:#ffffff">
+            {% if formulario.errors %}
+            <p style="color: red"><b>Hubo un error</b></p>
+            {% endif %}
             <div class="contenedor">
                 <table>{{formulario}}</table>
             </div>

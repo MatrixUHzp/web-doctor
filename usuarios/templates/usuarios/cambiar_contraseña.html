@@ -8,16 +8,22 @@
 <h1>Cambio Contraseña</h1>
 {% endblock h1_header %}
 
-{% if form.errors %}
-<p style="color: red">Hubo un error</p>
-{% endif %}
-
 {% block section1 %}
 <form action={% url 'cambio_contraseña' %} method="post">
     {% csrf_token %}
-    <table>
-        {{form}}
-    </table>
-    <button class="boton">Confirmar</button>
+    <div style="background-color:#2C3E50">
+        <div class="centrado" style="background-color:#ffffff">
+            {% if form.error %}
+            <p style="color: red"><b>Hubo un error</b></p>
+            {% endif %}
+            <div class="contenedor">
+                <table>{{form}}</table>
+            </div>
+            <p></p>
+            <div class="contenedor">
+                <button class="boton">Confirmar</button>
+            </div>
+        </div>
+    </div>
 </form>
 {% endblock section1 %}
